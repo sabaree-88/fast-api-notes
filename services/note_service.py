@@ -2,8 +2,8 @@ from datetime import datetime
 import uuid
 from typing import List, Optional
 
-from app.core.db import notes_collection
-from app.models.note import NoteCreate, NoteUpdate, Note
+from core.db import notes_collection
+from models.note import NoteCreate, NoteUpdate, Note
 
 async def create_note(user_id: str, note: NoteCreate) -> Note:
     note_id = str(uuid.uuid4())

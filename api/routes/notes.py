@@ -1,10 +1,10 @@
 from fastapi import APIRouter, HTTPException, Depends, status
 from typing import List
 
-from app.models.user import UserInDB
-from app.models.note import NoteCreate, Note, NoteUpdate
-from app.services import note_service
-from app.api.dependencies import get_current_user
+from models.user import UserInDB
+from models.note import NoteCreate, Note, NoteUpdate
+from services import note_service
+from api.dependencies import get_current_user
 
 router = APIRouter(tags=["notes"])
 

@@ -1,9 +1,9 @@
 from datetime import datetime
 import uuid
-from app.core.db import users_collection
-from app.core.security import get_password_hash
-from app.models.user import UserCreate, UserUpdate, User, UserInDB
-from app.api.dependencies import get_user_by_email
+from core.db import users_collection
+from core.security import get_password_hash
+from models.user import UserCreate, UserUpdate, User, UserInDB
+from api.dependencies import get_user_by_email
 
 async def create_user(user: UserCreate) -> User:
     # Check if user with email already exists

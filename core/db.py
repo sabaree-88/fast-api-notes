@@ -1,5 +1,5 @@
 from motor.motor_asyncio import AsyncIOMotorClient
-from app.core.config import settings
+from core.config import settings
 
 # Initialize MongoDB client
 client = AsyncIOMotorClient(settings.MONGODB_URL)

@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, Depends, status
-from app.models.user import UserCreate, User, UserUpdate, UserInDB
-from app.services import user_service
-from app.api.dependencies import get_current_user
+from models.user import UserCreate, User, UserUpdate, UserInDB
+from services import user_service
+from api.dependencies import get_current_user
 
 router = APIRouter(tags=["users"])
 
